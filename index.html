@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js"></script>
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">TravelJoy</a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active text-white" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link text-white" href="#price">Prices</a>
+            <a class="nav-link text-white" href="#des">Destinations</a>
+            <a class="nav-link text-white" href="#faq">Faqs</a>
+            <a class="nav-link text-white" href="#form">Sign Up </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide hero"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item" data-bs-interval="2000">
+          <img
+            src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900"
+            class="d-block w-100 c-img"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <h1 class="mt-5 text-uppercase display-1 fw-bolder text-capitalize">
+              Paris
+            </h1>
+            <p class="">
+              Explore the best view from paris and enjoy the eifiel tower
+            </p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="2000">
+          <img
+            src="https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/assets/v3/editorial/e/62/e62eb1d8-c913-5c0b-86f1-030bc4bd741a/63da7fb18577d.image.jpg?resize=1200%2C800"
+            class="d-block w-100 c-img"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <h1 class="mt-5 text-uppercase display-1 fw-bolder text-capitalize">
+              London
+            </h1>
+            <p class="">Get the best view of London .</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item" data-bs-interval="2000">
+          <img
+            src="https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg"
+            class="d-block w-100 c-img"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <h1 class="mt-5 text-uppercase display-1 fw-bolder text-capitalize">
+              New York
+            </h1>
+            <p class="">Enjoy the moder world of NewYork</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Card -->
+    <section class="places container" id="price">
+      <h1 class="mb-5 text-center">Destinations</h1>
+      <div class="conatiner-fluid">
+        <div class="row">
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://www.goldentours.com/travelblog/wp-content/uploads/2015/07/shutterstock_555823393-973x649.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="h">
+                  <h5 class="card-title">London</h5>
+                  <p class="p">$1200</p>
+                </div>
+                <p class="card-text">
+                  Instantly recognizable icons like Big Ben and St. Paul's
+                  Cathedral welcome you to history-laden London, the UK's
+                  multicultural capital that's a tireless innovator of art and
+                  culture
+                </p>
+                <a href="#" class="btn btn-primary">Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://cdn.getyourguide.com/img/tour/67c7510f8a166b2d.jpeg/73.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <div class="h">
+                  <h5 class="card-title">Paris</h5>
+                  <p class="p">$1200</p>
+                </div>
+                <p class="card-text">
+                  Paris is generally known for being the romantic capital of the
+                  world. The Eiffel Tower, the wall of love and the bridge of
+                  love locks serve to be the most romantic places in Paris.
+                </p>
+                <a href="#" class="btn btn-primary">Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMobgwEFuOmQwLVSzDs5ybrj8e3Ukicw2vg&usqp=CAU"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="h">
+                  <h5 class="card-title">NewYork</h5>
+                  <p class="p">$1200</p>
+                </div>
+                <p class="card-text">
+                  Looking for things to do in New York? Choose from a variety of
+                  options including multi-day sightseeing passes, tickets to
+                  popular attractions including One World Observatory .
+                </p>
+                <a href="#" class="btn btn-primary">Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://cdn.kimkim.com/files/a/images/052368389cfe2f5198e06cf0645e07a832e0c3bb/original-33bc300000fcab38f5612409d5ffbb32.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="h">
+                  <h5 class="card-title">Milan</h5>
+                  <p class="p">$1200</p>
+                </div>
+                <p class="card-text">
+                  Milan is Italy's most 'continental' city. Home to Leonardo's
+                  Last Supper and 'Duomo', it also has a fashion industry that
+                  defines trends at home and abroad.Explore the best.
+                </p>
+                <a href="#" class="btn btn-primary">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="" id="des">
+      <div class="container-1 container">
+        <h1>Visit Places</h1>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://tourstravelfinder.com/wp-content/uploads/2023/08/france-eiffel-tower-paris.jpg"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Paris</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://www.tripsavvy.com/thmb/qQ59TqUkLOoVREXGaoWNU3zRwRg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1047502134-ebf7496b41e047759046e17b91f57679.jpg"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit London</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://tourismmedia.italia.it/is/image/mitur/20220119115535-piazza-del-duomo-all-alba-milano-lombardia-shutterstock-1161075943-rid-1?wid=1080&hei=660&fit=constrain,1&fmt=webp"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Milan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://pics.craiyon.com/2023-08-05/bf0f09b0630648dda875c046dd3c2ace.webp"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Dubai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5856bc666a49634cd55b0ba9/8156edb1-a0c5-4c62-8eef-be5f3af20902/new-york-city-at-night.jpeg"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit NewYork</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/569e766e69492e9dd5373ef6/1548944287454-K42LBM1YNCAXEI3YAOVZ/aperture-tours-tokyo-003.jpg?format=1000w"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Tokyo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz56PlBKmOC7fVFm8anWzoZx6EMJHwyA2Z0w&usqp=CAU"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Sydney</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://www.thoughtco.com/thmb/8hRkNpA3eA7UU5VH9k63iDbU0OE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/swaminarayan-akshardham-temple--the-biggest-hindu-temple-in-the-world--new-delhi--india-827546130-5a4e9693494ec90036e9373d.jpg"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Delhi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 z">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  src="https://www.riu.com/blog/wp-content/uploads/2023/06/torre-de-la-television-berlin.jpg"
+                  alt=""
+                  class="image"
+                />
+                <div class="overlays">
+                  <p class="caption">Visit Berlin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign Up -->
+
+    <div class="newForm" id="form">
+      <h1>Sign Up</h1>
+
+      <div class="container d-flex justify-content-center align-item-center">
+        <form class="w-100 w-sm-100 p-3 border shadow">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Acordian -->
+    <section id="faq" class="py-md-5">
+      <h2 class="my-5 text-center">FAQ</h2>
+
+      <div class="conatiner">
+        <div class="accordion w-75 mx-auto" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How do i pay?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis reprehenderit eius tempore delectus itaque eos illum
+                  quae. In ratione nesciunt dolores mollitia porro. Sit
+                  asperiores id atque iure. Velit, dolor!
+                </p>
+                .
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Most popular packages?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Maxime accusamus quis repellendus et dolor assumenda, fugiat
+                  repellat quidem eligendi delectus, tempora facilis quos
+                  architecto eos. Possimus, deleniti. Veniam, optio odit?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Will here be a tour guide?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                iusto ducimus corrupti accusamus eaque eos laudantium, cum,
+                sapiente eveniet, praesentium iste totam suscipit explicabo
+                consectetur porro sequi qui rerum omnis?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="foo" class="bg-secondary">
+      <ul>
+        <li class="lis">Company</li>
+        <li class="lis">get it</li>
+        <li class="lis">Order</li>
+        <li class="lis">Buisness</li>
+        <li class="lis">Information</li>
+      </ul>
+
+      <ul>
+        <li class="lis">Account</li>
+        <li class="lis">Create account</li>
+        <li class="lis">Sign In</li>
+        <li class="lis">Ios app</li>
+        <li class="lis">Android app</li>
+      </ul>
+      <h1 class="l logo">TravelJoy</h1>
+
+      <div class="get">
+        <div class="c">
+          <i class="fa-brands fa fa-facebook"></i>
+          <i class="fa-brands fa fa-instagram"></i>
+          <i class="fa-brands fa fa-twitter"></i>
+        </div>
+        <!-- <i class="fa-brands fa fa-"></i> -->
+        <!-- <input type="text" placeholder="search"> -->
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
